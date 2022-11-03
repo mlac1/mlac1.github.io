@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Michelle Lac
+EMAIL: mlac@uci.edu
+-->
+
+<head>
+    <meta charset="utf-8">
+  <meta name="author" content="Michelle Lac">
+  <meta name="description" content="Michelle Lac's portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../styles.css">
+   
+   <!--These are the google fonts I used-->
+   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+
+
+    <title> Michelle Lac's Portfolio!</title>
+   
+  
+  </head>
+
+<body>
+  <header>
+    <!-- The navigation bar. Each page has a name, image, and source linking to the respective html page -->
+
+    <nav>
+      <ul>
+        <li >
+            <a class="home"
+            href="../index.html">
+             <img class="homeicon"
+             src="../images/home.png" alt="Homepage Logo" height="30"
+              width="30">
+            HOME
+            </a>
+        </li>
+
+        <li class = "projects">
+          <a href="projects.html">
+            <img class="projectsicon" src="../images/projects.png" alt="Icon of a project folder." height = "30" width="30">
+            PROJECTS</a>
+        </li>
+
+      
+       
+
+        <li class="resume">
+          <a href="resume.html">
+            <img class="resumeicon" src="../images/resume.png" alt="Icon of a resume." height = "30" width="30">
+            RESUME</a>
+        </li>
+
+       
+
+        
+        <li class ="about">
+            <a href="about.html">
+              <img class="abouticon" src="../images/face.png" alt="Icon of a face." height = "30" width="30">
+              ABOUT</a>
+          </li>
+      
+      
+        <li class ="media">
+            <a href="media.html">
+              <img class="mediaicon" src="../images/media.png" alt="Icon of a media folder." height = "30" width="30">
+              MEDIA</a>
+          </li>
+  
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+     
+  <h1>
+      <br>
+      <br>
+    PROJECTS</h1>
+
+  <h2>Relevant projects
+   
+
+  </h2>
+ 
+  <h3>
+     <br><br>
+    KnightOwl
+
+
+    
+  </h3>
+
+  <!--The uppermiddlesection lists information about the most recent project-->
+  <section class="uppermiddlesection"><div class="knightowl">
+     
+      <br>
+      <div class="knightowlimages">
+          <div><figure><img  class="knightowlscreen"
+            src="../images/knightowl.png" alt="The start page of the Knight Owl mobile application screen">
+            <figcaption>Start Page of KnightOwl</figcaption>
+        </figure></div>
+          
+           
+        <div> <figure><img  class="knightowlunsafe"
+          src="../images/knightowlunsafe.png" alt="The start page of the Knight Owl mobile application screen">
+          <figcaption>Text Notifications are sent when the user is unsafe</figcaption>
+      </figure></div>
+
+           <div><figure><img  class="knightowlinfoscreen"
+            src="../images/knightowlinfo.png" alt="The start page of the Knight Owl mobile application screen">
+            <figcaption>Enter the Information of the Ride</figcaption>
+        </figure></div>
+
+
+        
+          
+          
+       
+      </div>
+     
+      
+        
+      <br>
+  
+      <p>With the rising popularity of rideshares, we created an app 
+          that puts users in a safer position while pursuing these options and 
+          relieves any worry or stress from loved ones during these rideshares.</p>
+          <a href="https://github.com/adscheerer/KnightOwl/">
+            <figure class="octocat">  <img src="../images/octocat.png" alt="Image of Octocat, the logo for Github, 
+              which hosts software development." height="100"> </figure>
+              Click Here to View the Github page for this app!
+              
+            </a>
+      <h3>
+        Inspiration
+      </h3>
+
+      <p>
+          We wanted to make an app that helps anyone using ride-sharing,
+           have the ability to easily give out information regarding their ride. 
+           We based this off of our experiences when we would ask our friends to 
+           let us know if they got home safely, but occasionally they’d forget. 
+           So, we wanted to make an app that makes it easier for them to give out
+            and provide more information about where they will be, while also giving 
+            them the option to notify certain individuals of emergencies.
+        Because a portion of our app includes emergency notifications, 
+        we wanted the general UI of the app to appear discreet about this aspect of it.
+         This is also the reason why we named our app "Knight Owl," because it plays off our 
+         night theme, while subtly hinting at the fact that this app can be very helpful.
+      </p>
+      
+      <h3>What it does </h3>
+
+      <p>
+          Knight Owl works with one mode of transportation (Lyft). 
+          It allows users to fill out information about their trip, which
+           would be their current location and ending destination. 
+           They can also provide the name of their Lyft driver and 
+           the license plate of the car they are riding in. 
+          When the user starts their trip, reaches their destination, 
+          or run into a problem, trusted individuals are notified through text messages.
+      </p>
+
+      <h3>How we built it</h3>
+
+      <p>
+          We build it using Java, Android Studio, and SMS Manager. For the UI, we used Adobe Illustrator and Adobe XD.
+      </p>
+
+      <h3>
+        Challenges we ran into
+      </h3>
+
+      <p>
+          We had difficulty setting up the text messaging alerts that
+           would notifying the user's selected recipients. We attempted 
+           to use Twilio’s API to send SMS messages to our phones but it
+            was very time consuming and we were unable to download Ngrok 
+            and figure out how other applications such as Spark and IntelliJ
+             work together to send texts through Twilio. After many hours of
+              research and trial and error, we were finally able to send text
+          messages through SMS Manager. Additionally, none of us had experience with
+           Android so we had to learn about the ins and outs of Android studio.
+      </p>
+
+      <h3>What is next for KnightOwl?</h3>
+
+      <p>
+          In the future, we’re thinking of implementing a location
+           tracking feature that allows friends and family members 
+           to see users’ locations in real time and sync with the
+            ride sharing application being used so users won’t have to 
+            input details about their ride. Furthermore, to make it easier
+             to start a trip, the application may possibly include the functionality
+              for users to create labels for locations they frequent (eg. work, home, etc).
+               We would also like to include other modes of transportation, not just ride-sharing apps.
+                After further implementing other useful functionalities, we hope to improve user 
+                experience and scope by redesigning the application for flexibility and efficiency
+                 of use and by making the application compatible with multiple phone OS’s. One more 
+                 useful feature we would want to add in the future is that if the user doesn't signal
+                  their safe arrival in the estimated time their trip would take, their friends would be notified.
+      </p>
+
+    </div></section>
+
+    <!--
+          The middle section goes over other projects I have worked on.
+    -->
+  <section class="middlesection">
+    
+
+  
+    <br>
+
+    <h3>INF133: Redesign of Starlign Inn Website </h3>
+            <div class="first">
+                <p>
+                  Over the span of 3 months, I collaborated with a team to redesign the website for the motel,
+                  Startlight Inn, for the project course in Human Computer Interaction. We set out to evaluate 
+                  and redesign the website. I conducted a competitive analysis, heuristic evaluation to understand
+                   usability problems with the website. I created and conducted surveys and interviews
+                    to gather data about user experiene and I created prototypes, wireframes, 
+                    and mockups for an improved redesigned website. Attached below is the final report
+                    summing up our findings and redesigns. 
+                </p>
+                
+                <iframe class="document" src="../documents/132finalreport.pdf" height=400 width = 200></iframe>
+                
+              </div>
+        
+       
+     
+    <br>
+   
+    <h3>Respond!</h3>
+    <div class="second">
+      <p>
+        For this project, I created a Specifications and Requirements document for a
+         web application that provides a way to handle
+          emergency requests and work toward providing a safe campus for UCI affiliates.
+          I worked with my project team to create analysis models to understand users, goals 
+          and use cases. I also conducted surveys and interviews to understand and analyze
+
+           requirements. Attached below is the SRS document. 
+          </p>
+
+           <iframe class="document"
+            src="../documents/respondsrs.pdf" height=400 width = 200></iframe>
+
+        
+    </div>
+
+    <br>
+    <h3>Formation and Evolution in Ideology </h3>
+    <div class="third">
+        
+        <p> I collaborated with a research team part of a multidisciplinary design program. We
+          focused on a cultural consensus model approach for mapping religious ideologies. I 
+          assisted in survey design and data gathering. The research I conducted
+          was valuable experience for potential grad school as I learned how to write
+           about the processes, procedures, findings, and implications of research. Below is 
+           the final poster of the project and its findings. 
+          <br>
+          
+       
+        </p>
+        <iframe class="document" src="../documents/finalposter.pdf" height=400 width = 200></iframe>
+        
+    </div>
+
+    
+
+
+  </section>
+</div>
+  
+
+  <!--
+    The footer is the bottom section of the page that includes 
+    links to connect and contact me. 
+  -->
+  <footer>
+      
+      <section class="connect"> 
+          <h3>Connect with Me!</h3>
+        <ul>
+
+          <li>
+          
+             <a href="https://www.linkedin.com/in/michelle-lac-9b186515a/">
+               <img src="../images/LinkednLogo.png" alt="Linkedn's Logo" height="20"></a>
+          
+           
+          </li>
+         
+          
+          <li class="githublogo">
+              <a href="https://github.com/mlac1">
+              <img src="../images/github.png" alt="The GitHub Logo" height = "30"></a>
+            </li>
+          <li>
+            <a href="resume.html">RESUME </a>
+          </li>
+          <li>Email: michellelac123@gmail.com</li>
+        </ul></section>
+     
+      
+  </footer>
+
+   
+ 
+</body>
+</html>
